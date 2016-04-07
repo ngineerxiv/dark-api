@@ -8,8 +8,16 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
     <servlet-name>MokuMokuEvents</servlet-name>
     <servlet-class>com.ru.waka.servlets.MokumokuEvents</servlet-class>
 </servlet>
+<servlet>
+    <servlet-name>LineApiV1</servlet-name>
+    <servlet-class>com.ru.waka.servlets.LineApiV1</servlet-class>
+</servlet>
 <servlet-mapping>
     <servlet-name>MokuMokuEvents</servlet-name>
     <url-pattern>/mokumoku/events</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>LineApiV1</servlet-name>
+    <url-pattern>/api/line/v1/message</url-pattern>
 </servlet-mapping>
 </web-app>
