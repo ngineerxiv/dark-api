@@ -14,6 +14,7 @@ class Kusokora extends HttpServlet with LazyLogging {
   implicit val format = DefaultFormats
   val tw = TwitterFactory.getSingleton
   val repository = new KusokoraRepository(tw, Nil)
+  repository.update()
 
   override def doGet(request: HttpServletRequest, response: HttpServletResponse) {
     val res = Map(
