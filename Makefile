@@ -1,7 +1,11 @@
 credentials=../credentials
 
+deploy: twitter4j.properties
+	$(MAKE) appengine-deploy
+
 appengine-deploy:
-	sbt appengineDeploy
+	./tool/bin/sbt appengineDeploy
 
 twitter4j.properties:
 	cp -f $(credentials)/$@ ./src/main/resources/$@
+
