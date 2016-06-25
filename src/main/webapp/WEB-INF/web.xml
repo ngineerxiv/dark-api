@@ -12,6 +12,10 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
     <servlet-name>LineApiV1</servlet-name>
     <servlet-class>com.ru.waka.servlets.LineApiV1</servlet-class>
 </servlet>
+<servlet>
+    <servlet-name>Kusokora</servlet-name>
+    <servlet-class>com.ru.waka.servlets.Kusokora</servlet-class>
+</servlet>
 <servlet-mapping>
     <servlet-name>MokuMokuEvents</servlet-name>
     <url-pattern>/mokumoku/events</url-pattern>
@@ -19,5 +23,9 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 <servlet-mapping>
     <servlet-name>LineApiV1</servlet-name>
     <url-pattern>/api/line/v1/message</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>Kusokora</servlet-name>
+    <url-pattern>/api/v1/kusokora</url-pattern>
 </servlet-mapping>
 </web-app>
