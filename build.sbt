@@ -5,6 +5,8 @@ scalaVersion := "2.11.7"
 libraryDependencies ++= Seq(
   "javax.servlet" % "javax.servlet-api" % "3.1.0" % "provided",
   "com.google.api-client" % "google-api-client" % "1.21.0",
+  "com.google.api-client" % "google-api-client-appengine" % "1.21.0",
+  "com.google.api-client" % "google-api-client-servlet" % "1.21.0",
   "com.google.oauth-client" % "google-oauth-client-jetty" % "1.21.0",
   "com.google.apis" % "google-api-services-calendar" % "v3-rev173-1.21.0",
   "org.scalaz" %% "scalaz-core" % "7.1.1",
